@@ -7,6 +7,18 @@
   <meta name="description" content="IoT and AI project development services including ESP32, embedded systems, sensor integration, dashboards, and documentation.">
   <link rel="stylesheet" href="css/style.css">
 </head>
+<script>
+  const boxes = document.querySelectorAll('.service-box');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = 1;
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  });
+  boxes.forEach(box => observer.observe(box));
+</script>
 
 <body>
 
@@ -15,6 +27,12 @@
   <h1>AM INNOVATION </h1>
   <p>IoT & AI Project Development | Freelance Engineering Services</p>
 </header>
+<nav class="menu">
+  <a href="index.html" class="menu-btn">Home</a>
+  <a href="policies.html" class="menu-btn">Rules</a>
+  <a href="about.html" class="menu-btn">About Us</a>
+  <a href="project.html" class="menu-btn">Projects</a>
+</nav>
 
 <section class="hero">
   <h2>Build Smart. Deploy Local. No BS.</h2>
@@ -63,3 +81,4 @@
 
 </body>
 </html>
+
